@@ -63,7 +63,7 @@ a{
 
 section.landing{
 	align-items: center;
-	height: 700px;
+	height: 650px;
 	justify-content: center;
 	flex-direction: column;
 }
@@ -521,5 +521,13 @@ form{
 
 	.nav-list{
 		display: none;
+	}
+
+	.logo-zone__header{
+		font-size: 1.3rem;
+	}
+
+	.logo-zone__header--bold{
+		font-size: 1.3rem;
 	}
 }
