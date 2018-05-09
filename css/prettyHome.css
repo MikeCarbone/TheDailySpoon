@@ -523,11 +523,7 @@ form{
 		display: none;
 	}
 
-	.logo-zone__header{
-		font-size: 1.3rem;
-	}
-
-	.logo-zone__header--bold{
-		font-size: 1.3rem;
+	.logo-zone__header, .logo-zone__header--bold{
+		display: none;
 	}
 }
