@@ -65,7 +65,7 @@ section.landing{
 	align-items: center;
 	background-image: url(../img/food.jpg);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	height: 650px;
 	justify-content: center;
 	flex-direction: column;
