@@ -211,7 +211,6 @@ form{
 
 .recipes{
 	background-color: #FFFBEA;
-	margin: 0 0 200px 0;
 	padding: 50px 50px;
 }
 
@@ -409,7 +408,7 @@ form{
 	background-color: #FFFBEA;
 	flex-direction: column;
 	justify-content: center;
-	margin: 0 0 200px 0;
+	padding: 0 0 200px 0;
 }
 
 .main__header{
