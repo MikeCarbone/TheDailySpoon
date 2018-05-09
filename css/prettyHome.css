@@ -63,6 +63,7 @@ a{
 
 section.landing{
 	align-items: center;
+	background-image: url(../img/food.jpg);
 	height: 650px;
 	justify-content: center;
 	flex-direction: column;
