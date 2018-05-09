@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Daily Spoon</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/prettyHome.css">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link rel="icon" href="../img/chef-min.png">
+
+
+</head>
+<body>
+	<section id="header-js" class="header flex-container">
+		<a href="./home.html">
+			<div class="header__logo logo-zone flex-container">
+				<img class="logo-zone__img" src="../img/chef-min.png">
+				<h1 class="logo-zone__header">THE</h1>
+				<h1 class="logo-zone__header logo-zone__header--bold">DAILY</h1>
+				<h1 class="logo-zone__header">SPOON</h1>
+			</div>
+		</a>
+		<nav>
+			<ul class="nav-list flex-container">
+				<li id="search-button-js" ><a class="nav-list__item">Search</a></li>
+				<!--<li><a class="nav-list__item" href="">Browse</a></li>-->
+				<!--<li><a class="nav-list__item nav-list__item--active" href="">Dashboard</a></li>-->
+			</ul>
+			
+		</nav>
+		<div class="header__hamburger hamburger">
+			<!--<svg></svg>-->
+			<img class="hamburger__img" src="http://via.placeholder.com/60x60">	
+		</div>
+	</section>
+	<section class="search" id="search-js">
+		<img class="search__icon" src="http://via.placeholder.com/100x100">
+		<form action="./search.html">
+			<input class="search__input" type="text" name="Search" placeholder="Search...">
+			<button class="search__submit button">
+				Submit
+			</button>
+		</form>
+	</section>
+	<section class="dashboard flex-container">
+		<h1 class="dashboard__header">Search Results for:</h1>
+		<h3 class="search-term">CHicken parm with fries</h3>
+		<!--<ul class="dashboard__nav short-nav flex-container">	
+				<li class="short-nav__item"><a class="short-nav__link" href="#">Saved</a></li>
+				<li class="short-nav__item"><a class="short-nav__link" href="#">Following</a></li>
+				<li class="short-nav__item"><a class="short-nav__link short-nav__link--active" href="#">My Recipes</a></li>
+		</ul>-->
+	
+		<ul class="dashboard-recipes flex-container">
+			<li class="recipe-zone__recipe-card recipe-card">
+			<a href="#">
+				<img class="recipe-card__img" src="http://via.placeholder.com/250x150">
+				<h4 class="recipe-card__title">Chicken Parm over rice</h4>
+				<h5 class="recipe-card__tag">italian</h5>
+			</a>
+		</li>
+		<li class="recipe-zone__recipe-card recipe-card">
+			<a href="#">
+				<img class="recipe-card__img" src="http://via.placeholder.com/250x150">
+				<h4 class="recipe-card__title">Chicken Parm over rice</h4>
+				<h5 class="recipe-card__tag">italian</h5>
+			</a>
+		</li>
+		<li class="recipe-zone__recipe-card recipe-card">
+			<a href="#">
+				<img class="recipe-card__img" src="http://via.placeholder.com/250x150">
+				<h4 class="recipe-card__title">Chicken Parm over rice</h4>
+				<h5 class="recipe-card__tag">italian</h5>
+			</a>
+		</li>
+		<li class="recipe-zone__recipe-card recipe-card">
+			<a href="#">
+				<img class="recipe-card__img" src="http://via.placeholder.com/250x150">
+				<h4 class="recipe-card__title">Chicken Parm over rice</h4>
+				<h5 class="recipe-card__tag">italian</h5>
+			</a>
+		</li>
+		</ul>
+	</section>
+	<section class="footer flex-container">
+		<h1 class="footer__header">The Daily Spoon</h1>
+		<ul class="footer__links">
+			<li><a href="https://twitter.com/themcarbone" target="_blank">Twitter</a></li>
+			<li><a href="https://instagram.com/carbonemike" target="_blank">Instagram</a></li>
+		</ul>
+		<img class="footer__img" src="../img/chef-min.png">
+	</section>
+
+	<script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>
