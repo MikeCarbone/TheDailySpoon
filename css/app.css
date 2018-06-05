@@ -1,0 +1,382 @@
+@keyframes search-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+@keyframes search-out {
+  from {
+    opacity: 1;
+    transform: translateY(0px); }
+  to {
+    opacity: 0;
+    transform: translateY(-100px); } }
+* {
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Slabo 27px", serif;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 100%;
+  overflow-x: hidden; }
+
+::selection {
+  background: #DDA93A; }
+
+li {
+  list-style-type: none; }
+
+button, a {
+  cursor: pointer; }
+
+a {
+  color: #DDA93A;
+  text-decoration: none; }
+
+input:focus {
+  outline: none; }
+
+form {
+  height: 100%;
+  margin: 20px 40px;
+  width: 90%; }
+
+.flex-container {
+  display: flex; }
+
+.filter-zone {
+  justify-content: space-evenly; }
+
+.header {
+  align-items: center;
+  background-color: #FFFBEA;
+  border-bottom: 2px solid #781211;
+  box-shadow: 0px 7px 28px -10px black;
+  justify-content: space-around;
+  padding: 7px 0;
+  position: relative;
+  z-index: 100; }
+  .header__hamburger {
+    display: none; }
+
+.logo-zone {
+  align-items: center;
+  flex-direction: row; }
+  .logo-zone__header {
+    color: #781211;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin: 0 10px 0 0; }
+  .logo-zone__header--bold {
+    color: #781211;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: bold; }
+  .logo-zone__img {
+    display: inline-block;
+    height: 80px;
+    margin: 0 10px 0 0;
+    transform: rotateY(-180deg); }
+
+.search {
+  align-items: center;
+  background-color: #FFFBEA;
+  display: none;
+  height: 90px;
+  padding: 10px;
+  position: absolute;
+  width: 100%; }
+  .search__icon {
+    height: 100%;
+    margin: 20px;
+    position: relative;
+    width: 10%; }
+  .search__input {
+    background-color: #FFFBEA;
+    border-bottom: 2px solid #781211;
+    font-size: 2rem;
+    padding: 20px 0 20px 40px;
+    width: 70%; }
+  .search__submit {
+    background-color: #781211;
+    color: #FFFBEA;
+    font-size: 2rem;
+    height: 100%;
+    margin: 0 40px;
+    padding: 15px 0;
+    width: 15%; }
+    .search__submit:hover {
+      background-color: #820705; }
+
+.nav-list {
+  flex-direction: row; }
+  .nav-list__item {
+    border: 2px solid transparent;
+    color: #781211;
+    font-size: 1.25rem;
+    padding: 25px; }
+    .nav-list__item--active {
+      color: #8C8C8C; }
+    .nav-list__item:hover {
+      transition: all .25s ease-in-out;
+      transform: translateY(-5px);
+      border-top: 2px solid #DDA93A; }
+
+.active-search {
+  animation: search-in .25s ease-in-out; }
+
+.inactive-search {
+  animation: search-out .25s ease-in-out; }
+
+.search-term {
+  margin: 20px 0;
+  text-align: center; }
+
+@media screen and (max-width: 910px) {
+  .header {
+    justify-content: space-between; } }
+@media screen and (max-width: 650px) {
+  .header__hamburger {
+    display: block; }
+
+  .logo-zone__header {
+    display: none; }
+    .logo-zone__header--bold {
+      display: none; }
+
+  .nav-list {
+    display: none; } }
+.button {
+  border-radius: 10%;
+  font-size: 1.35rem; }
+
+.buttons-container__button {
+  background-color: #DDA93A;
+  color: #FFFBEA;
+  margin: 40px 20px; }
+  .buttons-container__button:hover {
+    background-color: #CA9628; }
+
+.recipe-card {
+  background-color: #FDFDFD;
+  border-radius: 25px;
+  box-shadow: 0px 3px 40px -20px black;
+  cursor: pointer;
+  margin: 25px;
+  max-width: 375px;
+  min-width: 350px;
+  padding: 0 0 15px 0;
+  width: 32%; }
+  .recipe-card__img {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    display: block;
+    margin: 0 auto;
+    min-height: 375px;
+    object-fit: cover;
+    width: 100%; }
+  .recipe-card__title {
+    color: #000000;
+    font-size: 1.5rem;
+    padding: 15px; }
+  .recipe-card__tag {
+    background-color: #8C8C8C;
+    border-radius: 8%;
+    color: #000000;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 0 0 15px;
+    padding: 5px; }
+  .recipe-card__tag-container {
+    display: flex;
+    justify-content: space-evenly; }
+
+@media screen and (max-width: 910px) {
+  .recipe-card {
+    margin: 10px; } }
+.landing {
+  align-items: center;
+  background-image: url(../img/food.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  justify-content: center;
+  flex-direction: column; }
+  .landing__header {
+    color: #FFFBEA;
+    display: inline-block;
+    font-family: "Playfair Display", serif;
+    font-size: 6rem;
+    font-weight: lighter;
+    margin: 10px;
+    text-align: center;
+    text-shadow: 0px 2px 15px black; }
+    .landing__header--bold {
+      font-weight: bold; }
+  .landing__description {
+    color: #FFFBEA;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 0px 2px 15px black; }
+  .landing__bg {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    width: 100%;
+    z-index: -10000; }
+
+.about {
+  background-color: #781211;
+  justify-content: space-evenly;
+  align-items: center; }
+  .about__img {
+    transform: rotateY(-180deg);
+    max-height: 300px;
+    margin: 25px 25px 25px 70px; }
+  .about__text {
+    background-color: #781211;
+    color: #FFFBEA;
+    font-family: "Playfair Display", serif;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    max-width: 960px;
+    text-align: center;
+    padding: 45px 5% 45px 0; }
+
+.recipes {
+  background-color: #FFFBEA;
+  padding: 50px 50px; }
+  .recipes__header {
+    color: #781211;
+    font-size: 3.5rem;
+    margin: 0 0 25px 0;
+    text-align: center; }
+
+.title-container {
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.recipe-zone {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly; }
+
+@media screen and (max-width: 910px) {
+  .recipes {
+    padding: 50px 0; } }
+@media screen and (max-width: 910px) {
+  .landing__header {
+    font-size: 4rem; }
+
+  .about__text {
+    font-size: 1.5rem;
+    margin: 65px 10px;
+    padding: 0; }
+  .about__img {
+    display: none; }
+
+  .main__img {
+    width: 100%; }
+  .main__caption {
+    margin: 20px 10px 40px 10px; }
+
+  .step__description {
+    margin: 20px 10px 40px 10px; } }
+.footer {
+  align-items: center;
+  background-color: #781211;
+  flex-direction: column;
+  justify-content: space-between; }
+  .footer__header {
+    color: #FFFBEA;
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    margin: 30px 0;
+    text-align: center;
+    width: 100%; }
+  .footer__links {
+    color: #DDA93A;
+    text-align: center; }
+  .footer__img {
+    margin: 30px 0;
+    max-height: 200px;
+    min-width: 125px;
+    transform: rotateY(-180deg); }
+
+.main {
+  background-color: #FFFBEA;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 200px 0; }
+  .main__header {
+    font-size: 4rem;
+    margin: 40px 5% 0 5%;
+    text-align: center; }
+  .main__subheader {
+    margin: 0 0 40px 0;
+    text-align: center; }
+  .main__img {
+    box-shadow: 0px 9px 30px -15px black;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+    max-height: 500px;
+    max-width: 1200px;
+    width: 90%; }
+  .main__caption {
+    color: #212121;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 20px auto 40px auto;
+    padding: 0 10px; }
+
+.ingredients {
+  align-items: center;
+  flex-direction: wrap;
+  justify-content: center;
+  margin: 40px 0; }
+  @media (max-width: 650px) {
+    .ingredients {
+      flex-direction: column; } }
+  .ingredients__list {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    max-width: 500px;
+    padding: 0 10px; }
+  .ingredients__img {
+    margin: 0 5% 0 0;
+    width: 40%; }
+    @media (max-width: 650px) {
+      .ingredients__img {
+        width: 90%; } }
+
+.step__header {
+  border-top: 2px solid #781211;
+  font-size: 1.75rem;
+  margin: 40px 10% 20px 10%;
+  padding: 10px;
+  text-align: center; }
+.step__description {
+  font-size: 1.3rem;
+  font-weight: lighter;
+  line-height: 1.5;
+  margin: 20px auto 40px auto;
+  max-width: 700px;
+  padding: 0 10px; }
+
+.search-zone {
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .search-zone__header {
+    margin: 50px auto;
+    text-align: center;
+    width: 100%; }

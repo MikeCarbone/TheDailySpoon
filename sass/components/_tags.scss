@@ -1,0 +1,39 @@
+*{
+	border: 0;
+	box-sizing: border-box;
+	font-family: $font-secondary;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 100%;
+	overflow-x: hidden;
+}
+
+::selection{
+	background: $spoon-gold;
+}
+
+li{
+	list-style-type: none;
+}
+
+button, a{
+	cursor: pointer;
+}
+
+a{
+	color: $spoon-gold;
+	text-decoration: none;
+}
+
+input:focus{
+	outline: none;
+}
+
+form{
+	height: 100%;
+	margin: 20px 40px;
+	width: 90%;
+}

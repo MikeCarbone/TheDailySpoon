@@ -1,0 +1,138 @@
+.header{
+	align-items: center;
+	background-color: $spoon-white;
+	border-bottom: 2px solid $spoon-red;
+	box-shadow: 0px 7px 28px -10px black;
+	justify-content: space-around;
+	padding: 7px 0;
+	position: relative;
+	z-index: 100;
+
+	&__hamburger{
+		display: none;
+	}
+}
+
+.logo-zone{
+	align-items: center;
+	flex-direction: row;
+
+	&__header{
+		color: #781211;
+		font-family: $font-primary;
+		font-size: 2rem;
+		font-weight: lighter;
+		margin: 0 10px 0 0;
+	}
+
+	&__header--bold{
+		color: #781211;
+		font-family: $font-primary;
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	&__img{
+		display: inline-block;
+		height: 80px;
+		margin: 0 10px 0 0;
+		transform: rotateY(-180deg);
+	}
+}
+
+.search{
+	align-items: center;
+	background-color: $spoon-white;
+	display: none;
+	height: 90px;
+	padding: 10px;
+	position: absolute;
+	width: 100%;
+
+	&__icon{
+		height: 100%;
+		margin: 20px;
+		position: relative;
+		width: 10%;
+	}
+
+	&__input{
+		background-color: $spoon-white;
+		border-bottom: 2px solid $spoon-red;
+		font-size: 2rem;
+		padding: 20px 0 20px 40px;
+		width: 70%;
+	}
+
+	&__submit{
+		background-color: $spoon-red;
+		color: $spoon-white;
+		font-size: 2rem;
+		height: 100%;
+		margin: 0 40px;
+		padding: 15px 0;
+		width: 15%;
+
+		&:hover{
+			background-color: $spoon-red-dark;
+		}
+	}
+}
+
+.nav-list{
+	flex-direction: row;
+
+	&__item{
+		border: 2px solid transparent;
+		color: $spoon-red;
+		font-size: 1.25rem;
+		padding: 25px;
+
+		&--active{
+			color: $spoon-grey;
+		}
+
+		&:hover{
+			transition: all .25s ease-in-out;
+			transform: translateY(-5px);
+			border-top: 2px solid $spoon-gold; 
+		}
+	}
+}
+
+.active-search{
+	animation: search-in .25s ease-in-out;
+}
+
+.inactive-search{
+	animation: search-out .25s ease-in-out;
+}
+
+.search-term{
+	margin: 20px 0;
+	text-align: center;
+}
+
+@media screen and (max-width: 910px){
+	.header{
+		justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.header__hamburger{
+		display: block;
+	}
+
+	.logo-zone__header{
+		display: none;
+		
+		&--bold{
+			display: none;
+		}
+	}
+
+	.nav-list{
+		display: none;
+	}
+}
