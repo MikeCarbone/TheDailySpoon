@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>The Daily Spoon</title>
 
-	<link rel="stylesheet" type="text/css" href="/scripting%20II/alpha/css/app.css">
+	<link rel="stylesheet" type="text/css" href="/css/app.css">
 	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 	<link rel="icon" href="/img/chef-min.png">
@@ -18,12 +18,10 @@
 </head>
 <body>
 	<section id="header-js" class="header flex-container">
-		<a href="/scripting%20II/alpha/index.php">
+		<a href="/index.php">
 			<div class="header__logo logo-zone flex-container">
-				<img class="logo-zone__img" src="/scripting%20II/alpha/img/chef-min.png">
-				<h1 class="logo-zone__header">THE</h1>
-				<h1 class="logo-zone__header logo-zone__header--bold">DAILY</h1>
-				<h1 class="logo-zone__header">SPOON</h1>
+				<img class="logo-zone__img" src="/img/chef-min.png">
+				<h1 class="logo-zone__header">THE <b>DAILY</b> SPOON</h1>
 			</div>
 		</a>
 		<nav>
@@ -40,8 +38,7 @@
 		</div>
 	</section>
 	<section class="search" id="search-js">
-		<img class="search__icon" src="http://via.placeholder.com/100x100">
-		<form action="/scripting%20II/alpha/templates/search.php">
+		<form class="search__form" action="/templates/search.php">
 			<input id="search__input-js" class="search__input" type="text" name="search" placeholder="Search...">
 			<button class="search__submit button">
 				Submit

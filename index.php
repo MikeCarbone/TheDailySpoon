@@ -15,9 +15,7 @@
 ?>
 	<section class="landing flex-container">
 		<div class="title-container flex-container">
-			<h1 class="landing__header">THE</h1>
-			<h1 class="landing__header landing__header--bold">DAILY</h1>
-			<h1 class="landing__header">SPOON</h1>
+			<h1 class="landing__header">THE <b>DAILY</b> SPOON</h1>
 		</div>
 		<h3 class="landing__description">The inside scoop on all your cooking needs</h3>
 		<div class="landing__buttons buttons-container">

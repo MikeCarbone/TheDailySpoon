@@ -7,4 +7,54 @@
 		text-align: center;
 		width: 100%;
 	}
+
+	.filter-zone{
+		margin: 20px 40px;
+		width: 90%;
+	}
+}
+
+.filter-container{
+	display: flex;
+}
+
+.input-icon{
+	fill: $spoon-red;
+	margin: 15px auto;
+}
+
+.filter-inputs{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	&__header{
+		text-align: center;
+	}
+
+	&__input{
+		border: 2px solid red;
+		cursor: pointer;
+		margin: 5px;
+		padding: 5px 8px;
+		text-align: center;
+		transition: all .2s ease-in-out;
+
+		&--green{
+			border-color: #008000;
+		}
+
+		&--orange{
+			border-color: #FFB700;
+		}
+
+		&--red{
+			border-color: #AB0D0D;
+		}
+
+		&:hover{
+			background-color: #C7C7C7;
+			transition: all .2s ease-in-out;
+		}
+	}
 }

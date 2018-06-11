@@ -29,6 +29,9 @@ html {
 li {
   list-style-type: none; }
 
+b {
+  font-family: "Playfair Display", serif; }
+
 button, a {
   cursor: pointer; }
 
@@ -38,11 +41,6 @@ a {
 
 input:focus {
   outline: none; }
-
-form {
-  height: 100%;
-  margin: 20px 40px;
-  width: 90%; }
 
 .flex-container {
   display: flex; }
@@ -106,11 +104,15 @@ form {
     color: #FFFBEA;
     font-size: 2rem;
     height: 100%;
-    margin: 0 40px;
     padding: 15px 0;
-    width: 15%; }
+    width: 100px; }
     .search__submit:hover {
       background-color: #820705; }
+  .search__form {
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    width: 90%; }
 
 .nav-list {
   flex-direction: row; }
@@ -140,16 +142,14 @@ form {
   .header {
     justify-content: space-between; } }
 @media screen and (max-width: 650px) {
-  .header__hamburger {
-    display: block; }
-
   .logo-zone__header {
     display: none; }
-    .logo-zone__header--bold {
-      display: none; }
+  .logo-zone__img {
+    margin-left: 20px; }
 
-  .nav-list {
-    display: none; } }
+  .search__form {
+    justify-content: space-between;
+    width: 100%; } }
 .button {
   border-radius: 10%;
   font-size: 1.35rem; }
@@ -166,6 +166,7 @@ form {
   border-radius: 25px;
   box-shadow: 0px 3px 40px -20px black;
   cursor: pointer;
+  display: flex;
   margin: 25px;
   max-width: 375px;
   min-width: 350px;
@@ -193,7 +194,28 @@ form {
     padding: 5px; }
   .recipe-card__tag-container {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    margin-top: auto; }
+  .recipe-card__link {
+    display: flex;
+    flex-direction: column; }
+
+.icon {
+  width: 30px;
+  height: 30px; }
+
+.icon-holder {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.tag-container__time-level {
+  color: #781211; }
+.tag-container__spicy-level {
+  color: #781211; }
+.tag-container__difficulty-level {
+  color: #781211; }
 
 @media screen and (max-width: 910px) {
   .recipe-card {
@@ -243,7 +265,6 @@ form {
     color: #FFFBEA;
     font-family: "Playfair Display", serif;
     font-size: 1.8rem;
-    margin: 0 auto;
     max-width: 960px;
     text-align: center;
     padding: 45px 5% 45px 0; }
@@ -262,9 +283,12 @@ form {
   justify-content: center; }
 
 .recipe-zone {
+  align-content: space-evenly;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-content: space-evenly; }
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 100%; }
 
 @media screen and (max-width: 910px) {
   .recipes {
@@ -318,6 +342,9 @@ form {
     font-size: 4rem;
     margin: 40px 5% 0 5%;
     text-align: center; }
+    @media (max-width: 650px) {
+      .main__header {
+        font-size: 3rem; } }
   .main__subheader {
     margin: 0 0 40px 0;
     text-align: center; }
@@ -363,7 +390,7 @@ form {
   border-top: 2px solid #781211;
   font-size: 1.75rem;
   margin: 40px 10% 20px 10%;
-  padding: 10px;
+  padding: 100px 10px 10px 10px;
   text-align: center; }
 .step__description {
   font-size: 1.3rem;
@@ -380,3 +407,38 @@ form {
     margin: 50px auto;
     text-align: center;
     width: 100%; }
+  .search-zone .filter-zone {
+    margin: 20px 40px;
+    width: 90%; }
+
+.filter-container {
+  display: flex; }
+
+.input-icon {
+  fill: #781211;
+  margin: 15px auto; }
+
+.filter-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .filter-inputs__header {
+    text-align: center; }
+  .filter-inputs__input {
+    border: 2px solid red;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px 8px;
+    text-align: center;
+    transition: all .2s ease-in-out; }
+    .filter-inputs__input--green {
+      border-color: #008000; }
+    .filter-inputs__input--orange {
+      border-color: #FFB700; }
+    .filter-inputs__input--red {
+      border-color: #AB0D0D; }
+    .filter-inputs__input:hover {
+      background-color: #C7C7C7;
+      transition: all .2s ease-in-out; }
+
+/*# sourceMappingURL=app.css.map */

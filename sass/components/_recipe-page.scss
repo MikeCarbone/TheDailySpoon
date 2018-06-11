@@ -8,6 +8,10 @@
 		font-size: 4rem;
 		margin: 40px 5% 0 5%;
 		text-align: center;
+		
+		@media (max-width: 650px){
+			font-size: 3rem;
+		}
 	}
 
 	&__subheader{
@@ -71,7 +75,7 @@
 		border-top: 2px solid $spoon-red;
 		font-size: 1.75rem;
 		margin: 40px 10% 20px 10%;
-		padding: 10px;
+		padding: 100px 10px 10px 10px;
 		text-align: center;
 	}
 

@@ -19,6 +19,10 @@ li{
 	list-style-type: none;
 }
 
+b{
+	font-family: $font-primary;
+}
+
 button, a{
 	cursor: pointer;
 }
@@ -33,7 +37,4 @@ input:focus{
 }
 
 form{
-	height: 100%;
-	margin: 20px 40px;
-	width: 90%;
 }
